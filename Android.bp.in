@@ -3,6 +3,9 @@ cc_library {
     vendor_available: true,
     host_supported: true,
     version_script: "exports.lds",
+    lto: {
+        never: true,
+    },
 
     target: {
         darwin: {
